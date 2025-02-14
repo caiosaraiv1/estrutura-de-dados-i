@@ -17,16 +17,26 @@ public class Exercicio_4 {
 		System.out.print("Digite o valor de z: ");
 		z = entrada.nextInt();
 		
-		if(x > y && x > z) {
-			System.out.println(x + " é o maior num!");
-		} else if(y > x && y > z) {
-			System.out.println(y + " é o maior num!");
-		} else if(z > x && z > y) {
-			System.out.println(z + " é o maior num!");
-		} else {
+		int resposta = maiorNum(x, y, z);
+		
+		if(resposta == -1) {
 			System.out.println("São iguais!");
+		} else {
+			System.out.println(resposta + " é o maior num!");
 		}
 		
 		entrada.close();
+	}
+	
+	public static int maiorNum(int x, int y, int z) {
+		if(x > y && x > z) {
+			return x;
+		} else if(y > x && y > z) {
+			return y;
+		} else if(z > x && z > y) {
+			return z;
+		} else {
+			return -1;
+		}
 	}
 }
