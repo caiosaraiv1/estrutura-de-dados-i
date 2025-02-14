@@ -1,1 +1,1 @@
-# estrutura-de-dados-I
+Disciplina de Estrutura de Dados I
