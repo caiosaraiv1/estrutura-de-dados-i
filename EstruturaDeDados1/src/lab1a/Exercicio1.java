@@ -12,19 +12,17 @@ public class Exercicio1 {
 		
 		System.out.print("Digite o valor 1: ");
 		v1 = entrada.nextInt();
-		
-		System.out.println();
-		
-		System.out.print("Digite o valor 2: ");
+				
+		System.out.print("\nDigite o valor 2: ");
 		v2 = entrada.nextInt();
-		
-		System.out.println("Antes V1: " + v1 + " V2: " + v2);
+			
+		System.out.println("\nAntes V1: " + v1 + " V2: " + v2);
 		
 		int temp = v1;
 		v1 = v2;
 		v2 = temp;
 		
-		System.out.println("Depois V1: " + v1 + " V2: " + v2);
+		System.out.println("\nDepois V1: " + v1 + " V2: " + v2);
 
 		entrada.close();
 	}
